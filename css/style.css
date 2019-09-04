@@ -78,7 +78,7 @@ h1{
 }
 
 .logo{
-    background-image: url(../img/logo.png);   
+    background-image: url('../img/logo.png');   
     display: block;
     width: 182px;
     height: 49px;
@@ -190,23 +190,23 @@ h1{
 }
 
 .company-one{
-    background-image: url(/img/sponsor_1.png);
+    background-image: url('../img/sponsor_1.png');
     flex-basis: 198px;
     height: 58px;
 }
 
 .company-two{
-    background-image: url(/img/sponsor_2.png);
+    background-image: url('../img/sponsor_2.png');
     flex-basis: 203px;
     height: 69px
 }
 .company-three{
-    background-image: url(/img/sponsor_3.png);
+    background-image: url('../img/sponsor_3.png');
     flex-basis: 201px;
     height: 47px
 }
 .company-four{
-    background-image: url(/img/sponsor_4.png);
+    background-image: url('../img/sponsor_4.png');
     flex-basis: 200px;
     height: 69px;
 }
@@ -421,6 +421,19 @@ h1{
     flex-basis: 55%;
 }
 
+.page-software-img{
+    display: block;
+    width: 918px;
+    height: 986px;
+    background-image: url('../img/bottom-screen.png');
+    background-size: 100% 100%;
+    background-position: 10px 57px;
+    background-repeat: no-repeat; 
+    position: absolute;
+    left: -20px;
+    bottom: -39px;
+}
+
 .page-software-icon{
     display: block;
     background-image: url('../img/icon_7.png');
@@ -443,6 +456,7 @@ h1{
 }
 
 
+
 .page-software-list dt{
     font-weight: 700;
     color: #5a6789;
@@ -454,6 +468,23 @@ h1{
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 1.8;
+}
+
+.page-software-list::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    background-color: transparent;    
+}
+.page-software-list::-webkit-scrollbar-button{
+    background-color: #1085e4;
+}
+.page-software-list::-webkit-scrollbar-track-piece{
+    background-color: #f3f6ff;
+}
+.page-software-list::-webkit-scrollbar-thumb{
+    height: 50px;
+    background-color: #1085e4;
+    border-radius: 10px;
 }
 
 .list-stat{
@@ -616,4 +647,6 @@ h1{
 
 .page-software{
     padding: 109px 0 20px 0;
+    position: relative;
+    overflow: hidden;
 }
