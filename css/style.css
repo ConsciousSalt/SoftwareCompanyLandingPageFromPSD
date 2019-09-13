@@ -793,6 +793,173 @@ h1{
     background-position: -87px -22px;;        
 }
 
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, .contact-form textarea{
+    font-size: 14px;
+    border: 2px solid #dce4ec;
+    border-radius: 35px;
+    padding: 25px 80px 25px 23px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea{
+    min-height: 160px;
+    resize: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    outline: none;
+}
+
+.contact-form input::-webkit-input-placeholder, .contact-form textarea::-webkit-input-placeholder {color: #8995b3}
+.contact-form input::-moz-placeholder, .contact-form textarea::-moz-placeholder {color: #8995b3}
+.contact-form input:-moz-placeholder, .contact-form textarea:-moz-placeholder {color: #8995b3}
+.contact-form input:-ms-input-placeholder, .contact-form textarea:-ms-input-placeholder {color: #8995b3}
+
+.contact-form-item{
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.contact-form-item::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 42px;
+}
+
+.contact-form-name::after{
+    background-image: url('../img/form-input-person.png');
+    width: 13px;
+    height: 15px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-mail::after{
+    background-image: url('../img/form-input-envelop.png');
+    width: 14px;
+    height: 11px;
+    top: calc(50% - 7px);
+}
+
+.contact-form-text::after{
+    background-image: url('../img/form-input-pencil.png');
+    width: 16px;
+    height: 15px;
+    top: 28px;
+}
+
+.contact-form .btn-primary{
+    position: relative;
+    padding: 22px 10px 23px 39px;
+    max-width: 227px;
+    letter-spacing: 2px;
+}
+
+.contact-form .btn-primary::before{
+    content: '';
+    background-image: url('../img/form-btn-plane_13.png');
+    display: block;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: calc(50% - 6px);
+    left: 50px;
+}
+
+.contact-form-item.contact-form-text {
+    margin-bottom: 34px;
+}
+
+.flex-form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1090px;
+    margin: 0 auto;
+}
+
+.flex-form img{
+    margin-right: 84px;
+}
+
+.flex-form>div {
+    flex-basis: 47%;
+    justify-content:space-between;
+}
+
+.footer>div{
+    display: flex;
+}
+
+.social {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.social li{
+    margin: 0 13px;
+}
+
+.footer .wrap{
+    justify-content: space-between;
+    max-width: 1153px;
+}
+
+.footer p{
+    margin-left: 28px;
+    letter-spacing: -0.3px;
+}
+
+.footer p>a{
+    color: #1a88e1;
+    text-transform: uppercase;
+}
+
+.link-social-item span{
+    background-image: url(../img/fotter-media-icons.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+}
+
+ .link-social-fb span{
+    width: 8px;
+    height: 15px;
+    background-position: -21px -44px;
+}
+
+.link-social-tw span{
+    width: 16px;
+    height: 15px;
+    background-position: -53px -44px;
+}
+
+.link-social-be span{
+    width: 19px;
+    height: 16px;
+    background-position: -94px -44px;
+}
+
+.link-social-pt span{
+    width: 17px;
+    height: 18px;
+    background-position: -136px -44px;
+}
+
+.link-social-ff span{
+    width: 11px;
+    height: 18px;
+    background-position: -179px -44px;
+}
+
 /* PAGES */
 .page-header{
     background-image: url('../img/bg.png');
@@ -927,7 +1094,7 @@ h1{
 .page-client{
     position: relative;
     margin-top: 120px;
-    padding: 20px 0 0 0;
+    padding: 20px 0 120px 0;
 }
 
 .page-client::before{
@@ -949,5 +1116,19 @@ h1{
     background-image: url('../img/bg-team.png');
     background-position: center;
     background-repeat: no-repeat;
-    padding: 82px 0 20px 0;
+    padding: 202px 0 121px 0;
+}
+
+.page-form{
+    background-image: url('../img/bg-form.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0 120px 0;
+}
+
+.footer{
+    background-color: #192b59;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
