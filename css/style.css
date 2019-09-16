@@ -923,8 +923,17 @@ h1{
     text-transform: uppercase;
 }
 
+.link-social-item svg{
+    fill: #fff;
+    transition: all 1.2s;
+}
+
+
+.link-social-item svg:hover{
+    fill: #1a88e1;
+}
+
 .link-social-item span{
-    background-image: url(../img/fotter-media-icons.png);
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto;
@@ -932,32 +941,32 @@ h1{
 
  .link-social-fb span{
     width: 8px;
-    height: 15px;
-    background-position: -21px -44px;
+    height: 29px;
+}
+
+.link-social-fb span svg{
+    width: 17px;
+    height: 28px;
 }
 
 .link-social-tw span{
     width: 16px;
-    height: 15px;
-    background-position: -53px -44px;
+    height: 29px;
 }
 
 .link-social-be span{
     width: 19px;
-    height: 16px;
-    background-position: -94px -44px;
+    height: 25px;
 }
 
 .link-social-pt span{
     width: 17px;
     height: 18px;
-    background-position: -136px -44px;
 }
 
 .link-social-ff span{
-    width: 11px;
-    height: 18px;
-    background-position: -179px -44px;
+    width: 16px;
+    height: 19px;
 }
 
 /* PAGES */
