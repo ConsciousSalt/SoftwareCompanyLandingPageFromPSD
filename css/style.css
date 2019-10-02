@@ -1345,7 +1345,8 @@ ul.nav-modal>li:last-child{
     }
 
     .flex-analytics .settings-icon,
-    .page-analitycs .settings-icon, 
+    .page-analitycs .settings-icon,
+    .page-software  .settings-icon, 
     .page-learn .settings-icon{
         display: none;
     }
@@ -1366,6 +1367,7 @@ ul.nav-modal>li:last-child{
     .page-client{
         justify-content: center;
         text-align: center;
+        padding: 20px 0 40px 0;
     }
 
     .box-clients{
@@ -1437,6 +1439,46 @@ ul.nav-modal>li:last-child{
         max-width: 170px;
         margin: 0 auto 49px;
     }
+
+    .box-price, .box-team{
+        flex-direction: column;    
+    }
+
+    .box-price-item ul {
+        display: flex;
+    }
+
+    .page-team{
+        padding: 40px 0 40px 0;
+        margin-top: 0;
+    }
+
+    .box-team{
+        margin-top: 0;
+    }
+
+    .box-team-item{
+        padding: 193px 31px 112px 31px;
+    }
+
+    .page-form{
+        padding: 40px 0 120px 0;
+    }
+
+    .flex-form>img{
+        display: none;
+    }
+
+    .flex-form>div{
+        flex-basis: 100%;
+        text-align: center;
+        justify-content: center;
+    }    
+
+    .contact-form .btn-primary{
+        margin-left: calc(50% - 222px/2);
+    }
+
 }
 
 @media(max-width:700px){
